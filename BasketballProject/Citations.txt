@@ -1,0 +1,5 @@
+Sparkfun Starter Code for Our Model of Seven Segment Display: https://learn.sparkfun.com/tutorials/large-digit-driver-hookup-guide
+
+Translation of Sparkfun Starter Code from Arduino to Python by Jonah Lefkoff: https://medium.com/@jonah.lefkoff/how-to-hook-up-the-sparkfun-7-segment-display-to-a-raspberry-pi-577591ba94b5
+
+RGB LED Matrix Control Library for Raspberry Pi by Henner Zeller: https://github.com/hzeller/rpi-rgb-led-matrix
