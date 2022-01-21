@@ -18,7 +18,7 @@ I use "canvas", "scoreboard", and "RGB matrix" interchangably in the code commen
 ### The first pair of scrolling text is misaligned the first time it runs, but all other scrolling text is aligned afterwards: ###
 This is because the centering offset is only applied when the text is changed, but not the first time the text is initially set. The centering process uses the distance covered by the drawn text, but when assigning the positions of the first pair of scrolling text, it has not been drawn yet because drawing the text requires the positions to already be set. There are workarounds I know of to fix this, but it is a minor issue that causes no errors.
 
-### The RGB LED matrix has a slight flickering issue: ###
+### The RGB LED Matrix has a slight flickering issue: ###
 From my research, this is partly because the Raspberry Pi is running too fast for the RGB LED matrix to handle, since something relatively high tech is being used for a comparably simple purpose. The GPIO output to the RGB LED Matrix can be slowed down to mitigate this, and has been done in the code provided. My other recommendation is to make sure all of the files are correctly made in the rpi-rgb-led-matrix/ directory. When using Python, there may be as many as three seperate makefiles that must be ran to guarentee changes to hardware-mapping.c are carried over to the program.
 
 ### All lights sometimes flash once every second, for a few seconds: ###
