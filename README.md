@@ -22,7 +22,7 @@ This is because the centering offset is only applied when the text is changed, b
 From my research, this is partly because the Raspberry Pi is running too fast for the RGB LED matrix to handle, since something relatively high tech is being used for a comparably simple purpose. The GPIO output to the RGB LED matrix can be slowed down to mitigate this, and has been done in the code provided. My other recommendation is to make sure all of the files are correctly made in the rpi-rgb-led-matrix/ directory. When using Python, there may be as many as three seperate makefiles that must be ran to guarentee changes to hardware-mapping.c are carried over to the program.
 
 ### All lights sometimes flash once every second, for a few seconds: ###
-This likely won't happen for you unless there is a wiring issue. On my end, this only started occuring once the backboard LEDs and timer electronics were moved onto the backboard piece, while the code remained unchanged. There may be some crossing of wires, since, in my testing, the flashing occurs even when code is not running.
+This likely won't happen for you unless there is a wiring issue. On my end, this only started occuring once the backboard LEDs and timer electronics were moved onto the backboard piece, while the code remained unchanged. There may be some crossing of wires, since in my testing, the flashing occurs even when code is not running.
 
 ### The timer glitches for a split second whenever a point is scored, and then reverts back to normal: ###
 This may not happen for you, but for me, I believe this is due to power being drawn when a point is scored in order to change the backboard LEDs, since the backboard LEDs and timer run off the same power wire.
