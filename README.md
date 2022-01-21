@@ -1,5 +1,5 @@
 # Basketball-Game
-Code for an arcade pop-a-shot style basketball game for Raspberry Pi, made over the course of winter break 2022.
+Code for an arcade pop-a-shot style basketball game on Raspberry Pi, made over the course of winter break 2022.
 
 # How To Run:
 Running this project will require the use of a Raspberry Pi flashed with Rasbian OS. Start by extracting the "BasketballProject" folder to the Raspberry Pi's user directory, likely labeled "/home/pi/". Then, clone the RGB LED Matrix Control repository (cited below), also into "/home/pi/". Finally, once the Raspberry Pi is wired, change the GPIO pins in "BasketballProject/basketballCode.py" as well as in "rpi-rgb-led-matrix/lib/hardware-mapping.c" to suit your needs, run the proper makefiles in rpi-rgb-led-matrix (follow their instructions on that Github page), and run basketballCode.py using sudo.
