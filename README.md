@@ -18,7 +18,7 @@ This is because the centering offset is only applied when the text is changed, b
 From my research, this appears to occur because the Raspberry Pi is running too fast for the RGB LED matrix to handle, since something relatively high tech is being used for a comparably simple purpose. The rate at which data is sent out to the RGB LED matrix can be slowed down, but it cannot be made perfect while still using the Raspberry Pi.
 
 ### All lights sometimes flash once every second, for a few seconds: ###
-This appears to be a wiring issue, since it only started occuring once the backboard LEDs and timer electronics were moved onto the backboard piece, while the code remained unchanged. I believe the wires could have been damaged slighly due to the backboard piece sitting on top of them for a prolonged amount of time at some point.
+This appears to be a wiring issue, since it only started occuring once the backboard LEDs and timer electronics were moved onto the backboard piece, while the code remained unchanged. There may be some crossing of wires, since the flashing occurs even when code is not running.
 
 ### The timer glitches for a split second whenever a point is scored, and then reverts back to normal: ###
 I believe this is due to power being drawn when a point is scored in order to change the backboard LEDs, since the backboard LEDs and timer likely run off the same power wire.
