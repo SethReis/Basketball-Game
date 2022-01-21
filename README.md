@@ -7,6 +7,7 @@ Running this project will require the use of a Raspberry Pi flashed with Rasbian
 # Documentation Notes:
 
 I use "canvas", "scoreboard", and "RGB matrix" interchangably in the code commenting, as they are all the same thing.
+
 "Clock" and "timer" are used interchangably as well.
 
 # Known Issues:
