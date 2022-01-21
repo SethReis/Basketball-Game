@@ -11,16 +11,16 @@ I use "canvas", "scoreboard", and "RGB matrix" interchangably in the code commen
 "Clock" and "timer" are used interchangably as well.
 
 # Known Issues:
-## The first pair of scrolling text is misaligned the first time it runs, but all other scrolling text is aligned afterwards: ##
+### The first pair of scrolling text is misaligned the first time it runs, but all other scrolling text is aligned afterwards: ###
 This is because the centering offset is only applied when the text is changed, but not the first time the text is initially set. The centering process uses the distance covered by the drawn text, but when assigning the positions of the first pair of scrolling text, it has not been drawn yet because drawing the text requires the positions to already be set. There are workarounds I know of to fix this, but it is a minor issue that causes no errors.
 
-## The RGB LED matrix has a slight flickering issue: ##
+### The RGB LED matrix has a slight flickering issue: ###
 From my research, this appears to occur because the Raspberry Pi is running too fast for the RGB LED matrix to handle, since something relatively high tech is being used for a comparably simple purpose. The rate at which data is sent out to the RGB LED matrix can be slowed down, but it cannot be made perfect while still using the Raspberry Pi.
 
-## The backboard LEDs and timer sometimes flash once every second, for a few seconds: ##
+### The backboard LEDs and timer sometimes flash once every second, for a few seconds: ###
 This appears to be a wiring issue, since it only started occuring once the backboard LEDs and timer electronics were moved onto the backboard piece, while the code remained unchanged. I believe the wires could have been damaged slighly due to the backboard piece sitting on top of them for a prolonged amount of time at some point.
 
-## The timer glitches for a split second whenever a point is scored, and then reverts back to normal: ##
+### The timer glitches for a split second whenever a point is scored, and then reverts back to normal: ###
 I believe this is due to power being drawn when a point is scored in order to change the backboard LEDs, since the backboard LEDs and timer likely run off the same power wire.
 
 # Citations:
