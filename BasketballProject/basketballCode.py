@@ -187,7 +187,7 @@ def respondToInputs():
         if (GPIO.input(startBtn) == False):
           gameState = playBall
           
-#      # If the reset button is being pressed in
+#      # If the reset button is being pressed in (commented out because the reset button on our machine is currently damaged)
 #      if GPIO.event_detected(resetBtn):
 #        if (GPIO.input(resetBtn) == False):
 #          # Wait 3 seconds
